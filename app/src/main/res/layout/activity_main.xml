@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add books to library"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Book Name"
+        app:layout_constraintTop_toBottomOf="@id/Title" />
+
+    <EditText
+        android:id="@+id/authorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Author Name"
+        app:layout_constraintTop_toBottomOf="@id/nameTV" />
+
+    <EditText
+        android:id="@+id/genreTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Genre"
+        app:layout_constraintTop_toBottomOf="@id/authorTv" />
+
+    <Button
+        android:id="@+id/addBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD BOOK"
+        app:layout_constraintTop_toBottomOf="@id/genreTv"/>
+
+    <Button
+        android:id="@+id/watchListTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addBook"
+        android:text="WATCH BOOK LIST"
+        android:enabled="false"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
